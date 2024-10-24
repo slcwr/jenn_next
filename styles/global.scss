@@ -1,0 +1,145 @@
+/* 既存のスタイルに追加 */
+
+/* フォント変数の適用 */
+body {
+    font-family: var(--font-geist-sans), sans-serif;
+  }
+  
+  /* アンチエイリアシング */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* フレックスレイアウトと最小高さ */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* メインコンテンツの伸縮 */
+  main {
+    flex-grow: 1;
+  }
+  
+  /* モノスペースフォントの適用（必要に応じて） */
+  .mono {
+    font-family: var(--font-geist-mono), monospace;
+  }
+
+  /* 既存のスタイルに追加 */
+
+.home-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content-wrapper {
+    max-width: 80rem; /* 1280px */
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .content-wrapper {
+      padding: 0 1.5rem;
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .content-wrapper {
+      padding: 0 2rem;
+    }
+  }
+  
+  .main-header {
+    padding: 2rem 0;
+    width: 100%; 
+  }
+
+  .header {
+    background-color: #bae6fd; 
+    padding: 1rem;
+  }
+
+  .header-text {
+    text-align: center;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center; 
+    padding-left: 1rem;
+    width: 100%; /* 追加 */
+    justify-content: flex-start; /* 追加 */
+  }
+  
+  .content-tabs {
+    display: flex;
+  }
+  
+  .site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+  }
+  
+  .articles-section {
+    background-color: #e6f3ff;
+    flex-grow: 1;
+  }
+  
+  .articles-content {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .articles-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .articles-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .articles-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .article-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    background-color: white;
+  }
+  
+  .article-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .article-author {
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+  }
+  
+  .article-excerpt {
+    color: #374151;
+  }

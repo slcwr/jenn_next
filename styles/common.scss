@@ -1,0 +1,82 @@
+// 共通変数
+:root {
+    --c-main: #423a57;
+    --c-point: #ef5e0c;
+    --c-back: #fdfdfd;
+    --c-sub: #f0eeee;
+    --c-line: #c4c4c4;
+    --c-border: #c8c8c8;
+  
+    --f-family: Hiragino Sans CNS;
+  }
+
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #0a0a0a;
+      --foreground: #ededed;
+    }
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    font-weight: 700;
+  }
+  
+  /* テキストバランスのユーティリティクラス */
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  /* 基本的なリセットとデフォルトスタイル（Tailwindの@base相当） */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+    margin: 0;
+  }
+  
+  /* その他の一般的なスタイル */
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* フォームエレメントのリセット */
+  button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+  }
+  
+  /* アクセシビリティのための非表示 */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }

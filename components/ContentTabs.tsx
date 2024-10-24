@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-//import Link from 'next/link';
 
 type Tab = 'trending' | 'explore';
 
@@ -32,19 +31,6 @@ export default function ContentTabs() {
           Explore
         </button>
       </div>
-
-      {/* <div>
-        {activeTab === 'trending' && <TrendingContent />}
-        {activeTab === 'explore' && <ExploreContent />}
-      </div> */}
     </div>
   );
 }
-
-// function TrendingContent() {
-//   return <div>Trending content goes here...</div>;
-// }
-
-// function ExploreContent() {
-//   return <div>Explore content goes here...</div>;
-// }
